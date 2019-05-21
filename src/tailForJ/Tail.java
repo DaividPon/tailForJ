@@ -41,6 +41,7 @@ public class Tail {
 						Thread.sleep(1000);
 						len = file.length();
 						if (len < fp) {
+                    // 読み込みポインタがファイルサイズ以上になった場合
 							System.out.println("The File was reset");
 							fp = len;
 						} else if (len > fp) {
